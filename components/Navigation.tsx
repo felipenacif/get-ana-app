@@ -9,9 +9,16 @@ const Navigation: React.FC<NavigationProps> = ({ scrolled }) => {
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-lg">A</span>
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 overflow-hidden rounded-xl shadow-lg shadow-indigo-200 border border-white/20">
+            <img 
+              src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?auto=format&fit=crop&q=80&w=150&h=150" 
+              alt="ANA 3D Avatar" 
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                e.currentTarget.src = "https://api.dicebear.com/7.x/bottts-neutral/svg?seed=Ana";
+              }}
+            />
           </div>
           <span className="text-xl font-bold tracking-tight text-slate-900">ANA</span>
         </div>

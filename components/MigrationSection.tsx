@@ -33,10 +33,12 @@ const MigrationSection: React.FC = () => {
         </div>
 
         <div className="flex flex-col items-center gap-4 group">
-          <div className="w-24 h-24 rounded-3xl bg-indigo-600 flex items-center justify-center group-hover:bg-indigo-500 transition-colors shadow-2xl shadow-indigo-500/40">
-            <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">A</span>
-            </div>
+          <div className="w-24 h-24 rounded-3xl overflow-hidden bg-white flex items-center justify-center group-hover:scale-105 transition-all shadow-2xl shadow-indigo-500/40 border-4 border-indigo-500/10">
+            <img 
+              src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?auto=format&fit=crop&q=80&w=200&h=200" 
+              alt="ANA Destination" 
+              className="w-full h-full object-cover"
+            />
           </div>
           <span className="text-white font-medium">ANA Pages</span>
         </div>

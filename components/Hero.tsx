@@ -29,9 +29,9 @@ const Hero: React.FC = () => {
         <div className="mt-16 relative">
           <div className="absolute inset-0 bg-gradient-to-t from-slate-50 via-transparent to-transparent z-10 h-32 bottom-0"></div>
           <img 
-            src="https://picsum.photos/seed/ana-hero/1200/600" 
-            alt="ANA Dashboard Preview" 
-            className="rounded-2xl shadow-2xl border border-slate-200 mx-auto transform hover:scale-[1.01] transition-transform duration-700"
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200&h=600" 
+            alt="Team collaborating in a modern office" 
+            className="rounded-2xl shadow-2xl border border-slate-200 mx-auto transform hover:scale-[1.01] transition-transform duration-700 object-cover"
           />
         </div>
       </div>
