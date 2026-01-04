@@ -8,6 +8,14 @@ import SelfHostingSection from './components/SelfHostingSection';
 import MigrationSection from './components/MigrationSection';
 import Footer from './components/Footer';
 
+const BetaRibbon: React.FC = () => (
+  <div className="fixed top-0 left-0 z-[100] overflow-hidden w-32 h-32 pointer-events-none">
+    <div className="absolute top-[22px] left-[-34px] w-[140px] py-1.5 bg-indigo-600 text-white text-[11px] font-black text-center uppercase tracking-[0.2em] transform -rotate-45 shadow-xl border-y border-indigo-400/30 select-none">
+      Beta
+    </div>
+  </div>
+);
+
 const App: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -21,6 +29,7 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <BetaRibbon />
       <Navigation scrolled={scrolled} />
       <main className="flex-grow">
         <Hero />
